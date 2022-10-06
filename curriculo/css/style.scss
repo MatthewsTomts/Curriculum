@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+body{
+    background: rgb(222, 173, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #f7e2ff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 50px #0000001a;
+
+    #esq {
+        position: relative;
+        background: #2d0047;
+        padding: 30px;
+        
+        header {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+            #imgPerfil{
+                position: relative;
+                width: 200px;
+                height: 200px;
+                border-radius:  50%;
+                overflow: clip;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            h1 {
+                color: #fbf4ff;
+                font-size: 1.5em;
+                margin-top: 20px;
+                text-transform: capitalize;
+                text-align: center;
+                font-weight: 500;
+                line-height: 1.4em;
+            }
+            
+            h2 {
+                color: #fbf4ff;
+                font-size: 1em;
+                font-weight: 300;
+                margin-top: 10px;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 500;
+                line-height: 1.4em;
+                background-color: none;
+            }
+
+        }
+
+        h3 {
+            color: #fbf4ff;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .organizaEsq { 
+            padding-top: 40px;
+
+            ul {
+                position: relative;
+                li {
+                    display: flex;
+                    position: relative;
+                    list-style: none;
+                    margin: 10px 0;
+                    cursor: pointer;
+
+                    align-items: center;
+
+                    img {
+                        margin-right: 10px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                    p {
+                        color: #fbf4ff;
+                        font-weight: 300;
+                    }
+                    
+                    a {
+                        color: #fbf4ff;
+                        font-weight: 300;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        #formacao {
+            #dataForm {
+                color: #a003f4;
+                font-weight: 500;
+            }
+            #dadosForm {
+                color: #fbf4ff;
+                font-weight: 500;
+            }
+        }
+
+        #idioma {
+            margin-bottom: 120px;
+            p {
+                color: #fbf4ff;
+                font-weight: 300;
+                margin-bottom: 5px;
+            }
+            
+            .percent {
+                position: relative;
+                width: 100%;
+                height: 6px;
+                background: #081921;
+                display: block;
+                margin-bottom: 10px;
+
+                div {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    background: #a003f4;
+                }
+
+                #idiomaPor {
+                    width: 100%;
+                }
+
+                #idiomaEng {
+                    width: 70%;
+                }
+
+                #idiomaJp {
+                    width: 10%;
+                }
+            }
+        }
+    }
+
+    main {
+        position: relative;
+        background: #f7e2ff;
+        padding: 40px;
+
+        h2 {
+            color: #2d0047;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        #sobre {
+            margin-bottom: 50px;
+            
+            p {
+                color: #333333;
+                font-size: 15.5px;
+            }
+        }
+
+        #exp {
+            margin-bottom: 50px;
+            .trabalho {
+                display: flex;
+                flex-direction: row;
+                margin: 20px 0;
+
+                .info {
+                    min-width: 150px;
+
+                    p {
+                        font-size: 0.83em;
+                        text-transform: uppercase;
+                        color: #898490;
+                        font-weight: 600; 
+                    }
+                }
+
+                .desc {
+                    h3 {
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        color: #2d0047;
+                        font-size: 16px;
+                    }
+
+                    p {
+                        max-width: 380px;
+                        font-size: 15.5px;
+                    }
+                }
+            }
+        }
+
+        #conhecimentos {
+            margin-bottom: 50px;
+            h3 {
+                font-size: 15.5px;
+                text-transform: uppercase;
+                color: #a003f4;
+                font-weight: 500;
+            }
+        }
+    }
+}
